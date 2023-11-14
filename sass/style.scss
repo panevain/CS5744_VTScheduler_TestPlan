@@ -1,0 +1,28 @@
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text{
+    padding-left: 15px;
+}
+
+/* Attempt at responsive design where narrow images are allowed to go full-width on small screens*/
+.page .narrow-image {
+    max-width: 50%;
+}
+
+.page table {
+    margin: 0;
+}
+
+.page__content code{
+    display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+    .page .narrow-image {
+        max-width: 100%;
+    }
+}

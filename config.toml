@@ -1,0 +1,20 @@
+# The URL the site will be built for
+base_url = "https://panevain.github.io/CS5744_VTScheduler_TestPlan/"
+compile_sass = true
+build_search_index = true
+theme = "book"
+title = "CS 5744 Project 2"
+minify_html = true
+
+[markdown]
+render_emoji = true
+smart_punctuation = true
+
+external_links_no_follow = true
+external_links_no_referrer = true
+
+highlight_code = true
+highlight_theme = "OneHalfLight"
+
+[extra]
+project_name="VT Scheduler"
