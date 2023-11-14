@@ -1,4 +1,4 @@
-# CS5744_TransitFlow
+# CS5744_VTScheduler_TestPlan
 
 This repository contains a zola project which generates HTML for Project 2.
 
@@ -7,8 +7,8 @@ This repository contains a zola project which generates HTML for Project 2.
 This set of instructions assumes that you have `git` and `zola` ([link](https://www.getzola.org)) installed.
 
 ```bash
-git clone git@github.com:panevain/CS5744_TransitFlow.git
-cd CS5744_TransitFlow
+git clone git@github.com:panevain/CS5744_VTScheduler_TestPlan.git
+cd CS5744_VTScheduler_TestPlan
 git submodule update --init
 zola serve
 ```
