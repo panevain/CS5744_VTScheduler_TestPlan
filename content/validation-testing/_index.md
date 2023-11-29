@@ -12,3 +12,9 @@ requirements established as part of requirements modeling are validated against 
 Integration testing is a systematic technique for constructing the software architecture while at the same time conducting tests to uncover errors associated with interfacing. The objective is to take unit-tested components and build a program structure that has been dictated by design.
 
 Test traceability matrix/FRs E2E
+
+| Test Case ID | FR/NFR Satisfied | Test Description | Expected Results |
+|--------------|------------------|------------------|------------------|
+| V1.1         |                  |                  |                  |
+|              |                  |                  |                  |
+|              |                  |                  |                  |
