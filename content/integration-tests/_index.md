@@ -5,26 +5,10 @@ sort_by = "weight"
 weight = 3
 +++
 
-Plan for integration builds
+# Test Plan
 
-Devise and present a series of integration phases and corresponding partial system builds for incrementally testing identifiable pieces of the system. You need to present the phases, describe what portions of the system each one contains, and then give a brief argument for why this is the best way to carry out the integration testing for the design you have chosen. For projects of the size pursued in this class, a handful (3-5) phases may be appropriate, but you are welcome to divide phases into subphases if that seems necessary for the project you have chosen.
+VT Scheduler's components will be integration tested in three phases. VT Scheduler can best be described as a three-layer architecture, and each phase roughly aligns with ensuring that the given layer integrates with the layer below it. Each phase of testing will utilize a bottom-up approach. The source documentation does not specify the deployment locations or platforms upon which MongoDB nor the backend run, so the integration tests will instead focus on the desired functionality and behaviors.
 
-Focus is placed on the design and construction of the software.
+The first phase of integration testing is concerned with the MongoDB instance and the ability to create <abbr title="Object Relational Mapping" >ORM</abbr>-like system wherein Course objects can be read from and written to the database via backend logic. The ability to consistently and correctly move objects from the database into heap RAM and vice-versa is the foundation upon which the controllers and frontend are built. In the second phase, the controllers are integrated with the database via the ORM-like system. This build allows a partial end-to-end test wherein API endpoints can be used and the effects of each call can be measured. Further, a first performance test of the system can occur at this point. Finally, the third phase incorporates both the student and administrator interfaces. This allows for a full end-to-end test which verifies that the web interface is correctly dispatching calls to the backend's API interface.
 
-Likely bottom up:
-* Reduce the number of stubs/drivers needed to simulate supermodules
-* The VTScheduler design is built entirely on the connection to the DB and subsequent Course objects
-* Can sidestep generating data for UI/controllers if the DB connection already is tested
-* Easier to 
-
-Weaknesses:
-* No good way to have an early prototype
-* Have to plan ahead what the next module will need, and thus what should be tested
-
-Describe 3 phases:
-* DB <-> ORM-like Objects
-* DB/ORM-like <-> Controllers
-* Controllers <-> Web UI
-
-
-VT Scheduler can best be described as a three-layer architecture 
+The decision to follow a bottom-up testing approach ultimately stems from the design of VT Scheduler. The application is primarily built a backend which is tightly integrated with a database. All of the system's functionality is implemented on the backend, and creating stubs for each controller or database connection if working from the frontend downward would be extremely time consuming. Instead, minimal stubs can be created which exercise the functionality provided by that layer and the layers below it.
