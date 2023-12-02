@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://panevain.github.io/CS5744_VTScheduler_TestPlan/</loc>
+    </url>
+    <url>
+        <loc>https://panevain.github.io/CS5744_VTScheduler_TestPlan/integration-tests/</loc>
+    </url>
+    <url>
+        <loc>https://panevain.github.io/CS5744_VTScheduler_TestPlan/integration-tests/phase-1/</loc>
+    </url>
+    <url>
+        <loc>https://panevain.github.io/CS5744_VTScheduler_TestPlan/integration-tests/phase-2/</loc>
+    </url>
+    <url>
+        <loc>https://panevain.github.io/CS5744_VTScheduler_TestPlan/integration-tests/phase-3/</loc>
+    </url>
+    <url>
+        <loc>https://panevain.github.io/CS5744_VTScheduler_TestPlan/introduction/</loc>
+    </url>
+    <url>
+        <loc>https://panevain.github.io/CS5744_VTScheduler_TestPlan/test-scope/</loc>
+    </url>
+    <url>
+        <loc>https://panevain.github.io/CS5744_VTScheduler_TestPlan/validation-testing/</loc>
+    </url>
+</urlset>
